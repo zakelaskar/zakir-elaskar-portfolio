@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-slate-50 text-ink antialiased;
+  }
+  ::selection {
+    @apply bg-violet-200 text-violet-950;
+  }
+}
+
+@layer utilities {
+  .text-gradient-name {
+    @apply bg-clip-text text-transparent bg-[length:120%_auto] bg-hero-name;
+  }
+  .glass-nav {
+    @apply bg-white/70 backdrop-blur-xl border border-white/60 shadow-soft;
+  }
+  .grid-bg {
+    background-image: linear-gradient(
+        rgba(99, 102, 241, 0.06) 1px,
+        transparent 1px
+      ),
+      linear-gradient(90deg, rgba(99, 102, 241, 0.06) 1px, transparent 1px);
+    background-size: 48px 48px;
+  }
+}
