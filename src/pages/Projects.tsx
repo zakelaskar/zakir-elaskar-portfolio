@@ -27,7 +27,7 @@ export function Projects() {
         <h1 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">Projects</h1>
         <p className="mt-2 max-w-2xl text-slate-600">
           Case studies spanning public transit optimization (flagship B-Line analysis), AutoML tooling,
-          deep learning in healthcare research, and systems-level CS writing — each grounded in
+          deep learning in healthcare research, and systems-level CS writing, each grounded in
           reproducible workflows and clear communication.
         </p>
       </header>

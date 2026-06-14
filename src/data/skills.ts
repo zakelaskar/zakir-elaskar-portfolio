@@ -1,6 +1,6 @@
 /**
  * Categorized skills for About (full) and Home (featured cloud subset).
- * Edit categories here — UI renders from this file only.
+ * Edit categories here; UI renders from this file only.
  */
 
 export type SkillCategoryIconId =
@@ -173,7 +173,7 @@ export const skillCategories: SkillCategory[] = [
 ];
 
 /**
- * Compact cloud on Home — breadth across domains without repeating long category lists.
+ * Compact cloud on Home: breadth across domains without repeating long category lists.
  */
 export const featuredSkillsCloud: readonly string[] = [
   "Python",
@@ -194,7 +194,7 @@ export const featuredSkillsCloud: readonly string[] = [
   "Stakeholder Reporting",
 ];
 
-/** Accent chips on Home “Skills at a glance” — must match strings in `featuredSkillsCloud`. */
+/** Accent chips on Home “Skills at a glance”; must match strings in `featuredSkillsCloud`. */
 export const featuredSkillsCloudHighlights: readonly string[] = [
   "Python",
   "R",

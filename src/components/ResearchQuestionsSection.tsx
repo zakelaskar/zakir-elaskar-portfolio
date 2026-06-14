@@ -61,7 +61,7 @@ export function ResearchQuestionsSection({ intro, questions }: ResearchQuestions
     <div className="mt-6">
       <p className="max-w-3xl text-base leading-relaxed text-slate-700 sm:text-lg">{intro}</p>
       <p className="mt-3 text-sm font-medium text-slate-500">
-        Use these questions as a roadmap—the related analysis links jump to the matching sections and
+        Use these questions as a roadmap. The related analysis links jump to the matching sections and
         figures later on this page.
       </p>
 

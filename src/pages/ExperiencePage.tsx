@@ -15,7 +15,7 @@ export function ExperiencePage() {
           Experience
         </h1>
         <p className="mt-2 max-w-2xl text-slate-600">
-          Internships and coordination roles where analytics met real-world operations — county
+          Internships and coordination roles where analytics met real-world operations: county
           surveillance support, campus engagement analytics, and state public health modernization.
         </p>
       </header>

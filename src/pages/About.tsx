@@ -8,11 +8,11 @@ export function About() {
     <>
       <SEO
         title="About"
-        description="Background, education, and career direction for Zakir Sajid Elaskar — data scientist and analytics professional."
+        description="Background, education, and career direction for Zakir Sajid Elaskar, data scientist and analytics professional."
       />
       <header className="mb-8">
         <h1 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">About me</h1>
-        <p className="mt-2 text-slate-600">Analytics, rigor, and curiosity — with a human story.</p>
+        <p className="mt-2 text-slate-600">Analytics, rigor, and curiosity, with a human story.</p>
       </header>
 
       <motion.div
@@ -26,14 +26,14 @@ export function About() {
             My path into data science began with a Bachelor&apos;s in Artificial Intelligence and Data
             Science from Savitribai Phule Pune University, where I built foundations in data analysis,
             AI, machine learning and a little bit of deep learning concepts. I then moved to the United States
-            to pursue graduate study — a transition that sharpened my communication, adaptability, and
+            to pursue graduate study, a transition that sharpened my communication, adaptability, and
             ability to collaborate across disciplines.
           </p>
           <p className="mt-4 leading-relaxed text-slate-600">
             At California State University, Chico, I completed my MS in Data Science and Analytics
             (May 2026), deepening expertise in reproducible analytics, applied modeling, and
             stakeholder-ready visualization. I am motivated by problems where messy real-world data,
-            careful methods, and clear storytelling must all show up together — especially in public
+            careful methods, and clear storytelling must all show up together, especially in public
             health, education, and operations.
           </p>
         </section>
@@ -56,7 +56,7 @@ export function About() {
         <section>
           <h2 className="text-lg font-semibold text-slate-900">Career goals</h2>
           <p className="mt-3 leading-relaxed text-slate-600">
-            I am pursuing roles where I can own analytical workflows end-to-end — from trustworthy
+            I am pursuing roles where I can own analytical workflows end-to-end, from trustworthy
             data prep to modeling, evaluation, and executive-ready communication. I want to partner
             with teams that value reproducibility, ethical deployment, and measurable impact.
           </p>

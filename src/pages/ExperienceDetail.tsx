@@ -225,7 +225,7 @@ export function ExperienceDetail() {
   return (
     <>
       <SEO
-        title={`${entry.organization} — ${entry.role}`}
+        title={`${entry.organization}: ${entry.role}`}
         description={entry.seoDescription}
         image={ogImage}
       />

@@ -40,7 +40,7 @@ export function Research() {
       <header className="mb-10">
         <h1 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">Research</h1>
         <p className="mt-2 max-w-2xl text-slate-600">
-          Selected publications and a dedicated space for culminating academic work — with links to
+          Selected publications and a dedicated space for culminating academic work, with links to
           deeper project write-ups.
         </p>
       </header>
@@ -71,9 +71,6 @@ export function Research() {
             </li>
           ))}
         </ul>
-        <p className="mt-6 text-xs text-slate-500">
-          Add future papers in <code className="font-mono text-slate-700">src/data/publications.ts</code>.
-        </p>
       </motion.section>
 
       <motion.section
@@ -114,7 +111,7 @@ export function Research() {
         <h2 className="text-xl font-semibold text-slate-900">Academic projects</h2>
         <p className="mt-3 text-slate-600">
           Course-driven and applied projects live alongside research-grade work in the projects
-          gallery — especially where methods, evaluation, and communication standards match
+          gallery, especially where methods, evaluation, and communication standards match
           publication quality even if they are not yet peer reviewed.
         </p>
         <Link

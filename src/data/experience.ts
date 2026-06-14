@@ -55,7 +55,7 @@ export const experienceEntries: Experience[] = [
     seoDescription:
       "Colon cancer registry analytics for Butte County using California Cancer Registry data (2018–2022): 7,900+ cases, stage recoding, treatment delays, age patterns, and GIS choropleths with Census tracts.",
     summary:
-      "California Cancer Registry analysis of 7,900+ colon cancer cases (2018–2022) to surface demographic, clinical, temporal, and geographic patterns for public health research and decision support—combining rigorous R workflows with GIS mapping across Butte County.",
+      "California Cancer Registry analysis of 7,900+ colon cancer cases (2018–2022) to surface demographic, clinical, temporal, and geographic patterns for public health research and decision support, combining rigorous R workflows with GIS mapping across Butte County.",
     technologies: [
       "R",
       "dplyr",
@@ -136,7 +136,7 @@ This project strengthened my experience in **healthcare analytics**, **epidemiol
     caseStudySubcaption: "FYE · Town Hall & Sense of Place (Public Sphere Pedagogy)",
     heroImage: "/images/experience/first-year-experience-hero.svg",
     seoDescription:
-      "First Year Experience at CSU Chico: mixed-methods survey analytics across 10 datasets (Town Hall & Sense of Place / PSP), Fall 2022–Fall 2025—Python, Pandas, Jupyter, thematic analysis, and stakeholder reporting.",
+      "First Year Experience at CSU Chico: mixed-methods survey analytics across 10 datasets (Town Hall & Sense of Place / PSP), Fall 2022–Fall 2025: Python, Pandas, Jupyter, thematic analysis, and stakeholder reporting.",
     summary:
       "Research & Engagement Coordinator for FYE, analyzing 10 survey datasets from Town Hall and Sense of Place / Public Sphere Pedagogy (Fall 2022–Fall 2025). Combined Likert-scale responses with open-ended reflections in Python to evaluate engagement, surface themes, and deliver visualizations and reporting that supported program improvement and stakeholder decisions.",
     technologies: [
@@ -183,17 +183,17 @@ This project strengthened my experience in **healthcare analytics**, **epidemiol
     contentSections: [
       {
         title: "Overview",
-        body: `The first year of college can be both **exciting** and **overwhelming**. Students are adjusting to a new environment, discovering **campus resources**, and navigating **academic expectations**—often for the first time. At **California State University, Chico**, the **First Year Experience (FYE)** program supports that transition with opportunities to engage resources, join meaningful discussions, strengthen **communication skills**, and build **belonging**.
+        body: `The first year of college can be both **exciting** and **overwhelming**. Students are adjusting to a new environment, discovering **campus resources**, and navigating **academic expectations**, often for the first time. At **California State University, Chico**, the **First Year Experience (FYE)** program supports that transition with opportunities to engage resources, join meaningful discussions, strengthen **communication skills**, and build **belonging**.
 
 As **Research & Engagement Coordinator**, I analyzed student **feedback and engagement data** from FYE initiatives, including **Town Hall** and **Sense of Place** (now known as **Public Sphere Pedagogy**). These programs invite students into **discussions**, **public speaking**, **presentations**, and related experiences aimed at **student success**.
 
-My work centered on **survey data collected after events** to understand student experiences and highlight **program improvement** opportunities. Datasets blended **quantitative and qualitative** information—**Likert-scale** responses alongside **open-ended reflections**.
+My work centered on **survey data collected after events** to understand student experiences and highlight **program improvement** opportunities. Datasets blended **quantitative and qualitative** information: **Likert-scale** responses alongside **open-ended reflections**.
 
 Across the project, I analyzed **10 survey datasets** (**7** Town Hall and **3** Sense of Place) spanning **Fall 2022** through **Fall 2025**. Using **Python**, **Pandas**, and **Jupyter Notebook**, I led **data cleaning**, **exploratory analysis**, **thematic analysis**, and **visualization** to surface patterns in **engagement** and **learning outcomes**.
 
 A rewarding dimension was working with **mixed-method survey data** for the first time. Combining approaches helped me identify **recurring themes**, assess **program effectiveness**, and build **visualizations** that communicated insights to **stakeholders** and informed **future program planning**.
 
-The role deepened my skills in **educational research**, **survey analytics**, **data storytelling**, and **stakeholder communication**—showing how data can strengthen **student experiences** and **institutional programs**.`,
+The role deepened my skills in **educational research**, **survey analytics**, **data storytelling**, and **stakeholder communication**, showing how data can strengthen **student experiences** and **institutional programs**.`,
       },
     ],
   },
@@ -210,7 +210,7 @@ The role deepened my skills in **educational research**, **survey analytics**, *
     seoDescription:
       "CDPH Fall 2025 internship with the Childhood Lead Poisoning Prevention Branch (CLPPB): compliance database modernization, SAS-to-Python pipelines, Power Automate, ArcGIS Pro, and data validation at scale.",
     summary:
-      "Data Scientist Intern with CDPH’s Childhood Lead Poisoning Prevention Branch (CLPPB), modernizing enforcement and compliance data—from thousands of historical forms through validated Python pipelines, workflow automation, and GIS—so programs that protect children’s health can rely on cleaner, faster analytics.",
+      "Data Scientist Intern with CDPH’s Childhood Lead Poisoning Prevention Branch (CLPPB), modernizing enforcement and compliance data from thousands of historical forms through validated Python pipelines, workflow automation, and GIS, so programs that protect children’s health can rely on cleaner, faster analytics.",
     technologies: [
       "Python",
       "ArcGIS Pro",
@@ -259,7 +259,7 @@ A primary focus was supporting modernization of **Enforcement & Compliance** dat
 
 I helped **translate legacy SAS workflows into Python**, improving **maintainability**, **reproducibility**, and long-term sustainability. I built **automated data cleaning and validation pipelines** that reduced manual work and standardized processing.
 
-I also used **Microsoft Power Automate** to streamline repetitive workflows and support **compliance monitoring**, and **ArcGIS Pro** for **spatial analysis and visualization**—strengthening the link between public health analytics and **geospatial** insight.
+I also used **Microsoft Power Automate** to streamline repetitive workflows and support **compliance monitoring**, and **ArcGIS Pro** for **spatial analysis and visualization**, strengthening the link between public health analytics and **geospatial** insight.
 
 Working with **cross-functional teams** on **data quality**, **automation**, and **decision-ready outputs**, I deepened skills in **Python**, **workflow automation**, **data engineering**, **GIS**, and **public health analytics**, with work tied to programs that directly affect **community well-being**.`,
       },

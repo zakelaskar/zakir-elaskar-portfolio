@@ -1,4 +1,4 @@
-# Zakir Sajid Elaskar — Portfolio
+# Zakir Sajid Elaskar: Portfolio
 
 Premium light-mode personal portfolio built with **React 18**, **TypeScript**, **Vite**, **Tailwind CSS**, **Framer Motion**, and **react-markdown** (GFM). React 18 matches `react-helmet-async` peer dependencies and avoids `npm install` ERESOLVE errors.
 
@@ -23,7 +23,7 @@ See **[DEPLOY.md](./DEPLOY.md)** for Vercel, Netlify, and Cloudflare Pages (SPA 
 
 ## Customize
 
-- **Skills (categorized):** `src/data/skills.ts` — `SkillsCloud` on Home, `SkillsSection` on About (`#skills`).
+- **Skills (categorized):** `src/data/skills.ts`; `SkillsCloud` on Home, `SkillsSection` on About (`#skills`).
 - **Profile, links, education, featured achievements:** `src/data/site.ts`
 - **Projects:** `src/data/projects.ts` (Markdown in `contentSections` / `content`)
 - **Experience:** `src/data/experience.ts` (optional `heroImage` paths under `public/images/experience/`)

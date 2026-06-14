@@ -87,7 +87,7 @@ export interface ContentSection {
   body: string;
   /** Optional DOM id for in-page links (e.g. from research question cards) */
   anchorId?: string;
-  /** Indices into `project.gallery` — rendered below this section */
+  /** Indices into `project.gallery`; rendered below this section */
   galleryIndices?: number[];
   /** Custom block instead of/in addition to Markdown */
   renderMode?: ContentSectionRenderMode;
@@ -144,7 +144,7 @@ export const projects: Project[] = [
     slug: "b-line-public-transit-optimization",
     title: "B-Line Public Transit: A Data-Driven Analysis for Service Optimization",
     summary:
-      "Flagship master's analysis: 134,548 ridership records and 351,178 fare transactions across 23 B-Line routes—EDA, regression, ARMA-style time series, forecasting, and optimization-oriented recommendations for Butte Regional Transit.",
+      "Flagship master's analysis: 134,548 ridership records and 351,178 fare transactions across 23 B-Line routes: EDA, regression, ARMA-style time series, forecasting, and optimization-oriented recommendations for Butte Regional Transit.",
     seoDescription:
       "B-Line (Butte Regional Transit) optimization case study: Python analytics on 134K+ ridership records, time series forecasting (R² ≈ 0.89), route utilization, Poisson/OLS/GLSAR modeling, and evidence-based service planning.",
     categories: ["Analytics", "Research", "Time Series", "Visualization"],
@@ -347,13 +347,13 @@ Below, you can explore some of the key insights, visualizations, and findings fr
       },
       {
         title: "Problem statement",
-        body: `Transit agencies must balance **fixed capacity** with **volatile demand**. In practice, planners often lack a single, reproducible view of how ridership varies by time of day, by route, and by week—making it difficult to distinguish structural underperformance from temporary noise.
+        body: `Transit agencies must balance **fixed capacity** with **volatile demand**. In practice, planners often lack a single, reproducible view of how ridership varies by time of day, by route, and by week, making it difficult to distinguish structural underperformance from temporary noise.
 
 For B-Line, the core problem was to translate raw operational data into **clear, defensible evidence** about where demand concentrates, where utilization lags, and where schedule or resource changes could improve efficiency without guesswork.`,
       },
       {
         title: "Why this project matters",
-        body: `When service decisions are informed by data, agencies can improve reliability, reduce waste, and better serve riders who depend on transit for work, school, and health access. This project demonstrates how **end-to-end analytics**—from data cleaning through modeling to interpretation—can support **evidence-based** planning conversations.
+        body: `When service decisions are informed by data, agencies can improve reliability, reduce waste, and better serve riders who depend on transit for work, school, and health access. This project demonstrates how **end-to-end analytics**, from data cleaning through modeling to interpretation, can support **evidence-based** planning conversations.
 
 Because the analysis is reproducible in notebooks, stakeholders can revisit assumptions, extend the forecasting horizon, and stress-test scenarios as new data arrives.`,
       },
@@ -362,12 +362,12 @@ Because the analysis is reproducible in notebooks, stakeholders can revisit assu
         anchorId: "data-collection-sources",
         body: `The study draws on **B-Line** operational datasets spanning ridership and fare transactions over an extended multi-year window. Records were aligned at the route and trip level so that daily, hourly, and weekly patterns could be compared consistently.
 
-Data preparation emphasized **validation**, **missingness review**, and **consistent definitions** for boardings, routes, and time buckets—critical steps before any modeling or visualization.`,
+Data preparation emphasized **validation**, **missingness review**, and **consistent definitions** for boardings, routes, and time buckets, critical steps before any modeling or visualization.`,
       },
       {
         title: "Exploratory data analysis",
         anchorId: "exploratory-data-analysis",
-        body: `Exploratory analysis focused on demand shape: how ridership varies across hours, weekdays, and routes. These views inform whether models should emphasize seasonality, trend, or route-specific effects—and help stakeholders build intuition before interpreting coefficients or forecasts.`,
+        body: `Exploratory analysis focused on demand shape: how ridership varies across hours, weekdays, and routes. These views inform whether models should emphasize seasonality, trend, or route-specific effects, and help stakeholders build intuition before interpreting coefficients or forecasts.`,
       },
       {
         title: "Ridership by Day of Week",
@@ -377,7 +377,7 @@ Data preparation emphasized **validation**, **missingness review**, and **consis
         technicalFigure: {
           galleryIndex: 5,
           caption:
-            "Total boardings by day of week show a commuter-heavy network: demand peaks mid-week and falls sharply on weekends—especially Sunday.",
+            "Total boardings by day of week show a commuter-heavy network: demand peaks mid-week and falls sharply on weekends, especially Sunday.",
           keyInsight:
             "Weekday concentration versus weekend softness informs span, frequency, and coverage tradeoffs without over-cutting service where riders still depend on it.",
           variant: "research",
@@ -391,7 +391,7 @@ Data preparation emphasized **validation**, **missingness review**, and **consis
         technicalFigure: {
           galleryIndex: 6,
           caption:
-            "Seasonal totals highlight higher demand in winter and spring and a dip through summer and fall—patterns often aligned with academic calendars and seasonal travel.",
+            "Seasonal totals highlight higher demand in winter and spring and a dip through summer and fall, patterns often aligned with academic calendars and seasonal travel.",
           keyInsight:
             "Predictable seasonal lifts and troughs support budget cycles, maintenance windows, and proactive capacity planning.",
           variant: "research",
@@ -414,7 +414,7 @@ Data preparation emphasized **validation**, **missingness review**, and **consis
       {
         title: "Time Series Analysis",
         anchorId: "time-series-modeling",
-        body: `To capture temporal structure, the project applies **time series** techniques appropriate for count-like demand and serial dependence—including **ARMA(1,1)**-style structures and **GLSAR** considerations where residual autocorrelation matters. Models were evaluated for explanatory power and stability, with **R² ≈ 0.89** indicating strong fit for the selected specifications.
+        body: `To capture temporal structure, the project applies **time series** techniques appropriate for count-like demand and serial dependence, including **ARMA(1,1)**-style structures and **GLSAR** considerations where residual autocorrelation matters. Models were evaluated for explanatory power and stability, with **R² ≈ 0.89** indicating strong fit for the selected specifications.
 
 Forecasting outputs support **short-horizon planning** scenarios: where peaks are likely, when demand softens, and how weekly cycles repeat.`,
       },
@@ -522,7 +522,7 @@ For **count-style utilization** outcomes, a **Poisson GLM** summarizes hour-of-d
         technicalFigure: {
           galleryIndex: 8,
           caption:
-            "Observed versus expected riders per trip and O/E utilization ratios for selected corridors—values materially below 1.0 indicate routes running well under expected demand.",
+            "Observed versus expected riders per trip and O/E utilization ratios for selected corridors: values materially below 1.0 indicate routes running well under expected demand.",
           keyInsight:
             "These ratios prioritize follow-up with operations: validate schedule design, coverage obligations, and rider-facing impacts before reallocating vehicles or span.",
           variant: "research",
@@ -537,12 +537,12 @@ For **count-style utilization** outcomes, a **Poisson GLM** summarizes hour-of-d
 - **Route heterogeneity** is large: a one-size-fits-all schedule can over-serve some corridors while under-serving others.  
 - **Weekly cycles** are stable enough to support forecasting and proactive adjustments (e.g., weekend span, headway changes).
 
-Where observed utilization falls meaningfully below expected demand, the system may be carrying excess scheduled service relative to realized need—an optimization lever worth validating with operations staff and rider-facing constraints.`,
+Where observed utilization falls meaningfully below expected demand, the system may be carrying excess scheduled service relative to realized need, an optimization lever worth validating with operations staff and rider-facing constraints.`,
       },
       {
         title: "Recommendations",
         body: `1. **Prioritize peak-period reliability** on corridors with the strongest commuter peaks.  
-2. **Review low-median routes** for potential schedule consolidation, interlining, or span changes—paired with equity and coverage checks.  
+2. **Review low-median routes** for potential schedule consolidation, interlining, or span changes, paired with equity and coverage checks.  
 3. **Adopt route-day planning** using heatmap-style profiles rather than network-wide weekend/weekday assumptions.  
 4. **Institutionalize refreshable reporting** (notebooks + version control) so models and charts update as new months of data arrive.  
 5. **Pair statistical findings with operations reality**: maintenance, driver availability, and passenger accessibility requirements should gate any service change.`,
@@ -563,9 +563,9 @@ If you are hiring for roles that blend **data science**, **forecasting**, **regr
     slug: "automl-pipeline-for-tabular-data",
     title: "AutoML Pipeline for Tabular Data",
     summary:
-      "Team-built Streamlit AutoML pipeline that automates preprocessing, RFE/PCA feature work, multi-model training, and evaluation—CSV upload to compared baselines with minimal manual setup.",
+      "Team-built Streamlit AutoML pipeline that automates preprocessing, RFE/PCA feature work, multi-model training, and evaluation: CSV upload to compared baselines with minimal manual setup.",
     seoDescription:
-      "Course team project: Python, scikit-learn, and Streamlit AutoML for tabular data—RFE, PCA, multi-model training, AUC ≈ 0.98, live demo, and GitHub source.",
+      "Course team project: Python, scikit-learn, and Streamlit AutoML for tabular data: RFE, PCA, multi-model training, AUC ≈ 0.98, live demo, and GitHub source.",
     categories: ["Machine Learning", "Streamlit", "Analytics"],
     tags: ["AutoML", "Scikit-Learn", "Streamlit", "Education"],
     technologies: ["Python", "Pandas", "NumPy", "Scikit-Learn", "Streamlit"],
@@ -750,7 +750,7 @@ Working as a team allowed us to combine expertise across data preprocessing, mac
     slug: "depression-detection-system",
     title: "Depression Detection System",
     summary:
-      "Published multimodal AI healthcare research: facial, speech, and text signals combined with CNN/RNN models for early depression screening—28K+ facial samples, peer-reviewed IJNRD paper, and an interactive Flask prototype.",
+      "Published multimodal AI healthcare research: facial, speech, and text signals combined with CNN/RNN models for early depression screening: 28K+ facial samples, peer-reviewed IJNRD paper, and an interactive Flask prototype.",
     seoDescription:
       "IJNRD-published depression detection system: multimodal CNN/RNN pipeline, OpenCV + TensorFlow, 28K+ facial expression samples, audio/text analysis, and open source on GitHub.",
     categories: ["Deep Learning", "Machine Learning", "Research"],
@@ -857,11 +857,11 @@ The **source code** and **published research paper** can be accessed through the
         title: "Problem statement",
         body: `Screening tools must balance **sensitivity to subtle behavioral cues** with **practical deployment** in research and triage settings. Unimodal signals can be ambiguous: facial affect alone may not reflect internal state, while text or prosody may be sparse or context-dependent.
 
-The engineering challenge is to build **stable representations** from heterogeneous inputs while controlling for noise, lighting, transcription error, and dataset bias—and to communicate **limitations** clearly so the system supports research and education rather than replacing clinical judgment.`,
+The engineering challenge is to build **stable representations** from heterogeneous inputs while controlling for noise, lighting, transcription error, and dataset bias, and to communicate **limitations** clearly so the system supports research and education rather than replacing clinical judgment.`,
       },
       {
         title: "Research motivation",
-        body: `Multimodal fusion aligns with how clinicians gather cues across appearance, speech, and self-report—while remaining careful about **false positives** and **ethical deployment**.
+        body: `Multimodal fusion aligns with how clinicians gather cues across appearance, speech, and self-report, while remaining careful about **false positives** and **ethical deployment**.
 
 This project explores whether a reproducible deep learning stack can **surface patterns** that warrant follow-up with a professional, especially in contexts where early signal detection could shorten time-to-care.`,
       },
@@ -906,9 +906,9 @@ All outputs were framed as **screening aids** aligned with peer-reviewed reporti
         title: "Multimodal analysis",
         body: `The system evaluates **three complementary channels**:
 
-- **Video analysis** — facial landmarks and expression probabilities from live or recorded frames.  
-- **Audio analysis** — spoken responses captured under timed prompts to standardize signal length.  
-- **Textual analysis** — trait-oriented NLP summaries (e.g., Big Five–style dimensions) alongside lexical cues.
+- **Video analysis**: facial landmarks and expression probabilities from live or recorded frames.  
+- **Audio analysis**: spoken responses captured under timed prompts to standardize signal length.  
+- **Textual analysis**: trait-oriented NLP summaries (e.g., Big Five–style dimensions) alongside lexical cues.
 
 The following sections show representative interfaces for each modality.`,
       },
@@ -1005,7 +1005,7 @@ The following sections show representative interfaces for each modality.`,
       },
       {
         title: "Key takeaways",
-        body: `- Multimodal design **reduces single-modality ambiguity** while increasing engineering complexity—fusion must be justified, not assumed.  
+        body: `- Multimodal design **reduces single-modality ambiguity** while increasing engineering complexity; fusion must be justified, not assumed.  
 - **28K+** facial samples supported robust vision-side training, but **deployment ethics** remain central: the system is a **research and triage aid**, not a replacement for clinicians.  
 - **Published research** and **open source** artifacts together support reproducibility and recruiter-friendly verification of claims.  
 - Use the **Published research paper (PDF)** and **GitHub repository** buttons at the end of this page for the paper and full code.`,
@@ -1018,7 +1018,7 @@ The following sections show representative interfaces for each modality.`,
     summary:
       "A technical exploration of algorithm design and performance analysis, examining the transition from TimSort to PowerSort in Python 3.11 through simulations, performance comparisons, and visual explanations.",
     seoDescription:
-      "Case study: Python 3.11 TimSort vs PowerSort—worst-case behavior, merge strategies, benchmarks, and technical figures from an algorithms & performance engineering deep dive.",
+      "Case study: Python 3.11 TimSort vs PowerSort: worst-case behavior, merge strategies, benchmarks, and technical figures from an algorithms & performance engineering deep dive.",
     categories: ["Algorithms", "Research", "Analytics"],
     tags: ["Python 3.11", "TimSort", "PowerSort", "Algorithms"],
     technologies: ["Python", "CPython 3.11", "Algorithms", "Performance analysis", "Benchmarking"],
@@ -1040,7 +1040,7 @@ The following sections show representative interfaces for each modality.`,
         alt: "Slide comparing TimSort edge cases with PowerSort advantages and a performance chart",
         src: "/images/projects/powersort-figure-1.png",
         caption:
-          "Figure 1. Why Python 3.11 adopted PowerSort—limitations in TimSort’s galloping mode, irregular patterns, and comparative performance behavior.",
+          "Figure 1. Why Python 3.11 adopted PowerSort: limitations in TimSort’s galloping mode, irregular patterns, and comparative performance behavior.",
       },
       {
         alt: "Dashboard comparing TimSort and PowerSort on common and worst-case datasets with charts",
@@ -1085,11 +1085,11 @@ This work strengthened my understanding of algorithm design, computational effic
         title: "Methodology",
         body: `## Background
 
-Sorting is a primitive operation in nearly every layer of software: query planners, indexing structures, ETL pipelines, and in-memory analytics all depend on fast, predictable ordering. Small differences in asymptotic constants, memory traffic, or merge policy can surface as tail latency or unpredictable batch times—especially when data is **partially ordered**, highly repetitive, or adversarially structured.
+Sorting is a primitive operation in nearly every layer of software: query planners, indexing structures, ETL pipelines, and in-memory analytics all depend on fast, predictable ordering. Small differences in asymptotic constants, memory traffic, or merge policy can surface as tail latency or unpredictable batch times, especially when data is **partially ordered**, highly repetitive, or adversarially structured.
 
 ## TimSort overview
 
-**TimSort** is a **hybrid** algorithm that combines **merge sort** with **insertion sort** on small segments. It is **stable**, which preserves the relative order of equal keys—critical for user-facing sorts and many database semantics. TimSort excels on real-world data that contains natural **runs** (monotonic subsequences). Its main limitations show up in edge cases: galloping heuristics can mispredict structure, and some irregular patterns can trigger suboptimal merge costs compared to tighter theoretical guarantees.
+**TimSort** is a **hybrid** algorithm that combines **merge sort** with **insertion sort** on small segments. It is **stable**, which preserves the relative order of equal keys, critical for user-facing sorts and many database semantics. TimSort excels on real-world data that contains natural **runs** (monotonic subsequences). Its main limitations show up in edge cases: galloping heuristics can mispredict structure, and some irregular patterns can trigger suboptimal merge costs compared to tighter theoretical guarantees.
 
 ## PowerSort overview
 
@@ -1117,8 +1117,8 @@ The evaluation contrasts **nearly sorted** sequences (where adaptive algorithms 
 
 - **Common dataset performance:** On nearly sorted inputs, both algorithms behave efficiently; the comparison highlights where differences are negligible versus where constant factors matter.
 - **Worst-case dataset performance:** Highly disordered patterns expose merge-strategy sensitivity; PowerSort’s design targets the instability and spikes that can appear in TimSort under challenging merges.
-- **Algorithm reliability:** Stability is preserved while improving predictability of merge costs—an important combination for a general-purpose language runtime.
-- **Computational tradeoffs:** There is no free lunch—adaptive sorting must balance bookkeeping overhead, cache behavior, and merge tree shape; the analysis documents where each approach wins.`,
+- **Algorithm reliability:** Stability is preserved while improving predictability of merge costs, an important combination for a general-purpose language runtime.
+- **Computational tradeoffs:** There is no free lunch; adaptive sorting must balance bookkeeping overhead, cache behavior, and merge tree shape; the analysis documents where each approach wins.`,
       },
       {
         title: "Experimental results",

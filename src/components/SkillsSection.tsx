@@ -8,7 +8,7 @@ type SkillsSectionProps = {
   className?: string;
 };
 
-/** Full categorized skills — use on About. */
+/** Full categorized skills; use on About. */
 export function SkillsSection({ id = "skills", className = "" }: SkillsSectionProps) {
   return (
     <section id={id} className={className} aria-labelledby="skills-section-heading">
@@ -22,7 +22,7 @@ export function SkillsSection({ id = "skills", className = "" }: SkillsSectionPr
           Skills &amp; capabilities
         </h2>
         <p className="mt-2 max-w-3xl text-sm leading-relaxed text-slate-600 sm:text-base">
-          Organized by domain so it is easy to scan — from programming and ML to public health, GIS,
+          Organized by domain so it is easy to scan, from programming and ML to public health, GIS,
           survey research, and automation.
         </p>
       </motion.div>

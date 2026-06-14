@@ -16,7 +16,7 @@ export function Contact() {
     const message = String(data.get("message") ?? "").trim();
     const subject = encodeURIComponent(`Portfolio inquiry from ${name || "visitor"}`);
     const body = encodeURIComponent(
-      `${message}\n\n—\nFrom: ${name}\nReply-to: ${email}`,
+      `${message}\n\n---\nFrom: ${name}\nReply-to: ${email}`,
     );
     window.location.href = `mailto:${profile.email}?subject=${subject}&body=${body}`;
     setSent(true);

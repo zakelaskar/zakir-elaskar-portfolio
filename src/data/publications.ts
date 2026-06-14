@@ -13,13 +13,13 @@ export const publications: Publication[] = [
     venue: "IJNRD",
     year: "2024",
     href: "https://www.ijnrd.org/papers/IJNRD2405665.pdf",
-    note: "Multimodal deep learning pipeline — see Projects for implementation context.",
+    note: "Multimodal deep learning pipeline; see Projects for implementation context.",
   },
   {
     title: "B-Line Public Transit: A Data-Driven Analysis for Service Optimization",
     venue: "Master’s culminating project · CSU Chico",
     year: "2026",
     href: "/projects/b-line-public-transit-optimization",
-    note: "134K+ ridership records, Poisson/OLS/GLSAR and ARMA-style modeling, forecasting (R² ≈ 0.89), and route-level optimization visuals — flagship portfolio case study.",
+    note: "134K+ ridership records, Poisson/OLS/GLSAR and ARMA-style modeling, forecasting (R² ≈ 0.89), and route-level optimization visuals: flagship portfolio case study.",
   },
 ];

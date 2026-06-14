@@ -32,7 +32,7 @@ export function SkillsCloud({ className = "" }: SkillsCloudProps) {
             Skills at a glance
           </h2>
           <p className="mt-1 max-w-xl text-sm text-slate-600">
-            A cross-section of tools and methods — see the full categorized list on About.
+            A cross-section of tools and methods; see the full categorized list on About.
           </p>
         </div>
         <Link

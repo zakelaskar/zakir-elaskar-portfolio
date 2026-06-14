@@ -260,7 +260,7 @@ export function Home() {
             Ready to collaborate?
           </h2>
           <p className="mx-auto mt-3 max-w-2xl text-slate-600">
-            Reach out for roles, research conversations, or project partnerships — résumé and links
+            Reach out for roles, research conversations, or project partnerships. Résumé and links
             are one click away.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-3">
