@@ -14,6 +14,7 @@
     "import:b-line-supplementary": "node scripts/import-b-line-supplementary.mjs"
   },
   "dependencies": {
+    "@vercel/analytics": "^2.0.1",
     "framer-motion": "^11.18.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
