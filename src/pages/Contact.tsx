@@ -1,34 +1,16 @@
-import { useState, type FormEvent } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { SEO } from "../components/SEO";
 import { profile } from "../data/site";
 
 export function Contact() {
-  const [sent, setSent] = useState(false);
-
-  function onSubmit(e: FormEvent<HTMLFormElement>) {
-    e.preventDefault();
-    const form = e.currentTarget;
-    const data = new FormData(form);
-    const name = String(data.get("name") ?? "").trim();
-    const email = String(data.get("email") ?? "").trim();
-    const message = String(data.get("message") ?? "").trim();
-    const subject = encodeURIComponent(`Portfolio inquiry from ${name || "visitor"}`);
-    const body = encodeURIComponent(
-      `${message}\n\n---\nFrom: ${name}\nReply-to: ${email}`,
-    );
-    window.location.href = `mailto:${profile.email}?subject=${subject}&body=${body}`;
-    setSent(true);
-  }
-
   return (
     <>
       <SEO
         title="Contact"
         description="Contact Zakir Sajid Elaskar for data science, analytics, and collaboration opportunities."
       />
-      <div className="grid gap-8 lg:grid-cols-2 lg:items-start">
+      <div className="mx-auto max-w-xl">
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
@@ -73,58 +55,6 @@ export function Contact() {
             View resume (PDF)
           </Link>
         </motion.div>
-
-        <motion.form
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.05 }}
-          onSubmit={onSubmit}
-          className="rounded-[2rem] border border-slate-100 bg-white/90 p-6 shadow-soft sm:p-8"
-        >
-          <h2 className="text-lg font-semibold text-slate-900">Send a message</h2>
-          <label className="mt-6 block text-sm font-medium text-slate-800" htmlFor="name">
-            Name
-          </label>
-          <input
-            id="name"
-            name="name"
-            required
-            className="mt-2 w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm outline-none ring-violet-200 transition focus:ring-4"
-            autoComplete="name"
-          />
-          <label className="mt-4 block text-sm font-medium text-slate-800" htmlFor="email">
-            Email
-          </label>
-          <input
-            id="email"
-            name="email"
-            type="email"
-            required
-            className="mt-2 w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm outline-none ring-violet-200 transition focus:ring-4"
-            autoComplete="email"
-          />
-          <label className="mt-4 block text-sm font-medium text-slate-800" htmlFor="message">
-            Message
-          </label>
-          <textarea
-            id="message"
-            name="message"
-            required
-            rows={5}
-            className="mt-2 w-full resize-y rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm outline-none ring-violet-200 transition focus:ring-4"
-          />
-          <button
-            type="submit"
-            className="mt-6 w-full rounded-full bg-slate-900 px-5 py-3 text-sm font-semibold text-white transition hover:bg-violet-700"
-          >
-            Compose email
-          </button>
-          {sent ? (
-            <p className="mt-3 text-center text-xs text-slate-500">
-              If your mail client did not open, email me directly at {profile.email}.
-            </p>
-          ) : null}
-        </motion.form>
       </div>
     </>
   );
